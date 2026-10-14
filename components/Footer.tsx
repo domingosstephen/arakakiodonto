@@ -5,8 +5,8 @@ const WHATSAPP = "https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agend
 export default function Footer() {
   return (
     <footer
-      className="border-t border-[#1C2638]"
-      style={{ background: "#060910" }}
+      className="border-t border-[#1F2937]"
+      style={{ background: "#111827" }}
       aria-label="Rodapé"
     >
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -94,7 +94,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div
-          className="mt-12 pt-8 border-t border-[#1C2638] flex flex-col md:flex-row items-center justify-between gap-4"
+          className="mt-12 pt-8 border-t border-[#1F2937] flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <p className="text-xs text-[#334457] font-sans">
             © 2026 Arakaki Odonto · Dra. Jéssica Arakaki · CRO 59293 · São Paulo, SP
