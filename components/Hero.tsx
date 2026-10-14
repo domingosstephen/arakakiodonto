@@ -14,9 +14,8 @@ export default function Hero() {
         {/* Text side */}
         <div className="flex flex-col justify-center pt-32 pb-16 lg:py-0 lg:pr-12">
           {/* CRO badge */}
-          <div className="mb-8 inline-flex items-center gap-2">
-            <span className="w-5 h-px bg-[#2CC8C8]" aria-hidden="true" />
-            <span className="text-xs tracking-[0.2em] text-[#2CC8C8] uppercase font-sans font-semibold">
+          <div className="mb-8">
+            <span className="text-xs tracking-[0.15em] text-[#2CC8C8] uppercase font-sans font-semibold">
               Dra. Jéssica Arakaki · CRO 59293
             </span>
           </div>
