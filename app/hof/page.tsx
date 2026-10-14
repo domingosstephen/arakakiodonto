@@ -7,9 +7,7 @@ export const metadata: Metadata = {
   title: "Harmonização Orofacial (HOF) | Arakaki Odonto",
   description:
     "Harmonização Orofacial em São Paulo. Toxina botulínica, preenchimento, bioestimuladores e lifting por fios. Dra. Jéssica Arakaki, CRO 59293.",
-  alternates: {
-    canonical: "https://arakakiodonto.com.br/hof",
-  },
+  alternates: { canonical: "https://arakakiodonto.com.br/hof" },
 };
 
 const jsonLd = {
@@ -17,13 +15,9 @@ const jsonLd = {
   "@type": "MedicalProcedure",
   name: "Harmonização Orofacial (HOF)",
   description:
-    "Conjunto de procedimentos estéticos minimamente invasivos que harmonizam o rosto com o sorriso: toxina botulínica, preenchimentos com ácido hialurônico, bioestimuladores e fios de PDO.",
+    "Procedimentos estéticos minimamente invasivos: toxina botulínica, ácido hialurônico, bioestimuladores e fios de PDO.",
   procedureType: "NoninvasiveProcedure",
-  provider: {
-    "@type": "Dentist",
-    name: "Arakaki Odonto",
-    url: "https://arakakiodonto.com.br",
-  },
+  provider: { "@type": "Dentist", name: "Arakaki Odonto", url: "https://arakakiodonto.com.br" },
 };
 
 const WHATSAPP = "https://wa.me/5511999999999?text=Olá!%20Tenho%20interesse%20em%20Harmonização%20Orofacial.";
@@ -31,7 +25,7 @@ const WHATSAPP = "https://wa.me/5511999999999?text=Olá!%20Tenho%20interesse%20e
 const procedures = [
   {
     name: "Toxina Botulínica",
-    desc: "Relaxa músculos de forma pontual para suavizar linhas de expressão, tratar bruxismo e elevar as comissuras labiais.",
+    desc: "Relaxa músculos de forma pontual. Suaviza linhas de expressão, trata bruxismo e levanta comissuras labiais.",
   },
   {
     name: "Ácido Hialurônico",
@@ -39,60 +33,52 @@ const procedures = [
   },
   {
     name: "Bioestimuladores de Colágeno",
-    desc: "Estimulam a produção natural de colágeno para firmeza e rejuvenescimento progressivo da pele.",
+    desc: "Estimulam produção natural de colágeno para firmeza e rejuvenescimento progressivo da pele.",
   },
   {
     name: "Fios de PDO",
-    desc: "Lifting não cirúrgico com fios reabsorvíveis que promovem sustentação e neocolagênese.",
+    desc: "Lifting não cirúrgico com fios reabsorvíveis. Sustentação imediata e estímulo de neocolagênese.",
   },
   {
     name: "Skinbooster",
-    desc: "Microinjeções de ácido hialurônico para hidratação profunda e melhora da qualidade da pele.",
+    desc: "Microinjeções de ácido hialurônico para hidratação profunda e melhora da textura da pele.",
   },
   {
     name: "Rinomodelação",
-    desc: "Correção do contorno nasal sem cirurgia, utilizando preenchimento para harmonizar o perfil.",
+    desc: "Correção do contorno nasal sem cirurgia usando preenchimento para harmonizar o perfil.",
   },
 ];
 
 export default function HOFPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Nav />
 
       {/* Hero */}
-      <section
-        className="pt-40 pb-24 px-6 relative overflow-hidden"
-        style={{ background: "linear-gradient(to bottom, #0B0F18, #131A28)" }}
-      >
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="text-xs tracking-[0.3em] text-[#2CC8C8] uppercase font-sans mb-4 block">
+      <section className="pt-40 pb-20 px-6 bg-[#F9FAFB] border-b border-[#E5E7EB]">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-xs tracking-[0.3em] text-[#2CC8C8] uppercase font-sans mb-4 block font-semibold">
             Estética Facial
           </span>
           <h1
-            className="text-5xl sm:text-6xl font-light text-white leading-tight mb-6 font-serif"
+            className="text-5xl sm:text-6xl font-light text-[#111827] leading-tight mb-6 font-serif"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
             Harmonização
             <br />
-            <span className="font-semibold italic text-[#2CC8C8]">
-              Orofacial
-            </span>
+            <span className="font-semibold text-[#2CC8C8]">Orofacial</span>
           </h1>
-          <p className="text-[#94A8BE] font-sans leading-relaxed text-base max-w-xl mx-auto">
-            Procedimentos minimamente invasivos que unem odontologia e estética para harmonizar seu rosto com o seu sorriso, respeitando suas proporções naturais.
+          <p className="text-[#6B7280] font-sans leading-relaxed text-base max-w-xl">
+            Procedimentos minimamente invasivos com base anatômica. Resultado que não anuncia que foi feito.
           </p>
         </div>
       </section>
 
       {/* What is HOF */}
-      <section className="py-20 px-6" style={{ background: "#0B0F18" }}>
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div className="relative rounded-2xl overflow-hidden" style={{ aspectRatio: "3/4" }}>
+          <div className="relative rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.10)]" style={{ aspectRatio: "3/4" }}>
             <Image
               src="/images/hof.webp"
               alt="Dra. Jéssica Arakaki realizando Harmonização Orofacial em paciente"
@@ -102,30 +88,30 @@ export default function HOFPage() {
               quality={85}
               priority
             />
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#2CC8C8]" aria-hidden="true" />
           </div>
           <div>
             <h2
-              className="text-3xl sm:text-4xl font-light text-white mb-6 font-serif"
+              className="text-3xl sm:text-4xl font-light text-[#111827] mb-6 font-serif"
               style={{ fontFamily: "var(--font-cormorant)" }}
             >
-              O que é a
-              <span className="font-semibold italic text-[#2CC8C8]"> HOF?</span>
+              HOF com
+              <span className="font-semibold text-[#2CC8C8]"> critério clínico</span>
             </h2>
-            <p className="text-[#94A8BE] font-sans leading-relaxed mb-4">
-              A Harmonização Orofacial (HOF) é uma área da odontologia que usa técnicas estéticas minimamente invasivas para melhorar a proporção e simetria do terço inferior e médio do rosto.
+            <p className="text-[#6B7280] font-sans leading-relaxed mb-4">
+              A Harmonização Orofacial fica ruim quando não tem proporção. A Dra. Jéssica trabalha com base anatômica e referências de terço médio e inferior do rosto, não com fórmulas genéricas.
             </p>
-            <p className="text-[#94A8BE] font-sans leading-relaxed mb-4">
-              Diferente de cirurgias plásticas, os procedimentos de HOF são realizados em consultório, com anestesia tópica ou local, e têm recuperação praticamente imediata.
+            <p className="text-[#6B7280] font-sans leading-relaxed mb-4">
+              Todos os procedimentos são realizados em consultório, com anestesia tópica ou local. Recuperação praticamente imediata. Produtos registrados na Anvisa.
             </p>
-            <p className="text-[#94A8BE] font-sans leading-relaxed mb-8">
-              A Dra. Jéssica Arakaki realiza todos os procedimentos com critério clínico rigoroso, prioriza resultados naturais e usa apenas produtos registrados na Anvisa.
+            <p className="text-[#6B7280] font-sans leading-relaxed mb-8">
+              Você sai parecendo que descansou bem, não parecendo que fez alguma coisa.
             </p>
-
             <a
               href={WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium font-sans text-sm bg-[#2CC8C8] text-[#060910] hover:bg-[#52DADA] transition-all duration-200"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold font-sans text-sm bg-[#2CC8C8] text-white hover:bg-[#1A9999] transition-all duration-200"
             >
               Agendar Avaliação de HOF
             </a>
@@ -134,32 +120,28 @@ export default function HOFPage() {
       </section>
 
       {/* Procedures grid */}
-      <section className="py-20 px-6" style={{ background: "#131A28" }}>
+      <section className="py-20 px-6 bg-[#F9FAFB]">
         <div className="max-w-7xl mx-auto">
           <h2
-            className="text-3xl sm:text-4xl font-light text-white mb-12 text-center font-serif"
+            className="text-3xl sm:text-4xl font-light text-[#111827] mb-12 text-center font-serif"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
-            Procedimentos <span className="font-semibold italic text-[#2CC8C8]">realizados</span>
+            Procedimentos <span className="font-semibold text-[#2CC8C8]">realizados</span>
           </h2>
           <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none">
             {procedures.map((p) => (
               <li
                 key={p.name}
-                className="rounded-2xl border border-[#253045] p-7 hover:border-[#2CC8C8]/30 transition-colors"
-                style={{ background: "linear-gradient(135deg, #0B0F18 0%, #1C2638 100%)" }}
+                className="rounded-2xl border border-[#E5E7EB] p-7 bg-white hover:shadow-[0_4px_24px_rgba(44,200,200,0.10)] hover:border-[#2CC8C8]/30 transition-all duration-200"
               >
-                <div
-                  className="w-8 h-1 rounded-full bg-[#2CC8C8] mb-5"
-                  aria-hidden="true"
-                />
+                <div className="w-8 h-1 rounded-full bg-[#2CC8C8] mb-5" aria-hidden="true" />
                 <h3
-                  className="text-xl font-medium text-white mb-3 font-serif"
+                  className="text-xl font-medium text-[#111827] mb-3 font-serif"
                   style={{ fontFamily: "var(--font-cormorant)" }}
                 >
                   {p.name}
                 </h3>
-                <p className="text-sm text-[#6B7E92] leading-relaxed font-sans">{p.desc}</p>
+                <p className="text-sm text-[#6B7280] leading-relaxed font-sans">{p.desc}</p>
               </li>
             ))}
           </ul>
@@ -167,22 +149,22 @@ export default function HOFPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 text-center" style={{ background: "#0B0F18" }}>
+      <section className="py-20 px-6 text-center bg-[#111827]">
         <h2
           className="text-3xl sm:text-4xl font-light text-white mb-4 font-serif"
           style={{ fontFamily: "var(--font-cormorant)" }}
         >
-          Vamos harmonizar
-          <span className="font-semibold italic text-[#2CC8C8]"> seu rosto?</span>
+          Quer resultado que
+          <span className="font-semibold text-[#2CC8C8]"> ninguém percebe que foi feito?</span>
         </h2>
-        <p className="text-[#94A8BE] font-sans mb-8 max-w-md mx-auto">
-          Agende sua avaliação e descubra quais procedimentos são indicados para o seu caso.
+        <p className="text-[#9CA3AF] font-sans mb-8 max-w-md mx-auto">
+          Avaliação gratuita. A Dra. Jéssica analisa o seu rosto e indica quais procedimentos fazem sentido para o seu caso.
         </p>
         <a
           href={WHATSAPP}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-medium font-sans text-[#060910] bg-[#2CC8C8] hover:bg-[#52DADA] hover:shadow-[0_0_30px_rgba(44,200,200,0.4)] transition-all duration-200"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold font-sans text-[#111827] bg-[#2CC8C8] hover:bg-[#52DADA] transition-colors duration-200"
         >
           Falar com a Dra. Jéssica
         </a>

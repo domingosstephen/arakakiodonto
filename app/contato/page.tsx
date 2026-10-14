@@ -18,44 +18,38 @@ export default function ContatoPage() {
     <>
       <Nav />
 
-      <section
-        className="pt-40 pb-24 px-6"
-        style={{ background: "linear-gradient(to bottom, #0B0F18, #131A28)" }}
-      >
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="text-xs tracking-[0.3em] text-[#2CC8C8] uppercase font-sans mb-4 block">
+      {/* Hero */}
+      <section className="pt-40 pb-20 px-6 bg-[#F9FAFB] border-b border-[#E5E7EB]">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-xs tracking-[0.3em] text-[#2CC8C8] uppercase font-sans mb-4 block font-semibold">
             Fale Conosco
           </span>
           <h1
-            className="text-5xl sm:text-6xl font-light text-white leading-tight mb-6 font-serif"
+            className="text-5xl sm:text-6xl font-light text-[#111827] leading-tight mb-6 font-serif"
             style={{ fontFamily: "var(--font-cormorant)" }}
           >
-            Vamos conversar
+            Agende sua
             <br />
-            <span className="font-semibold italic text-[#2CC8C8]">
-              sobre seu sorriso
-            </span>
+            <span className="font-semibold text-[#2CC8C8]">avaliação gratuita</span>
           </h1>
-          <p className="text-[#94A8BE] font-sans leading-relaxed text-base max-w-xl mx-auto">
-            O primeiro passo é uma avaliação sem compromisso. Entre em contato via WhatsApp e a Dra. Jéssica Arakaki responderá pessoalmente.
+          <p className="text-[#6B7280] font-sans leading-relaxed text-base max-w-xl">
+            A Dra. Jéssica Arakaki responde pessoalmente. Sem telefonista, sem formulário, sem espera.
           </p>
         </div>
       </section>
 
       {/* Contact options */}
-      <section className="py-20 px-6" style={{ background: "#0B0F18" }}>
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
           {/* WhatsApp */}
           <a
             href={WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
-            className="group rounded-2xl border border-[#253045] hover:border-[#2CC8C8]/40 p-10 flex flex-col gap-6 transition-all duration-300 hover:bg-[#131A28]"
-            style={{ background: "linear-gradient(135deg, #131A28 0%, #1C2638 100%)" }}
+            className="group rounded-2xl border border-[#E5E7EB] hover:border-[#2CC8C8]/40 hover:shadow-[0_4px_24px_rgba(44,200,200,0.10)] p-10 flex flex-col gap-6 transition-all duration-200 bg-white"
           >
             <div
-              className="w-14 h-14 rounded-xl flex items-center justify-center text-[#2CC8C8]"
-              style={{ background: "rgba(44,200,200,0.08)" }}
+              className="w-14 h-14 rounded-xl flex items-center justify-center text-[#2CC8C8] bg-[#F0FCFC]"
               aria-hidden="true"
             >
               <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
@@ -64,17 +58,17 @@ export default function ContatoPage() {
             </div>
             <div>
               <h2
-                className="text-2xl font-medium text-white mb-2 font-serif"
+                className="text-2xl font-medium text-[#111827] mb-2 font-serif"
                 style={{ fontFamily: "var(--font-cormorant)" }}
               >
                 WhatsApp
               </h2>
-              <p className="text-sm text-[#6B7E92] font-sans leading-relaxed mb-3">
+              <p className="text-sm text-[#6B7280] font-sans leading-relaxed mb-3">
                 Atendimento direto com a Dra. Jéssica. Resposta em até 2 horas durante horário comercial.
               </p>
-              <span className="text-xs text-[#2CC8C8] font-sans">Segunda a Sábado · 08h às 18h</span>
+              <span className="text-xs text-[#2CC8C8] font-sans font-semibold">Segunda a Sábado · 08h às 18h</span>
             </div>
-            <span className="inline-flex items-center gap-2 text-sm font-medium text-[#2CC8C8] group-hover:gap-3 transition-all font-sans">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#2CC8C8] group-hover:gap-3 transition-all font-sans">
               Enviar mensagem
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7" />
@@ -87,12 +81,10 @@ export default function ContatoPage() {
             href="https://www.instagram.com/arakakiodonto"
             target="_blank"
             rel="noopener noreferrer"
-            className="group rounded-2xl border border-[#253045] hover:border-[#2CC8C8]/40 p-10 flex flex-col gap-6 transition-all duration-300 hover:bg-[#131A28]"
-            style={{ background: "linear-gradient(135deg, #131A28 0%, #1C2638 100%)" }}
+            className="group rounded-2xl border border-[#E5E7EB] hover:border-[#2CC8C8]/40 hover:shadow-[0_4px_24px_rgba(44,200,200,0.10)] p-10 flex flex-col gap-6 transition-all duration-200 bg-white"
           >
             <div
-              className="w-14 h-14 rounded-xl flex items-center justify-center text-[#2CC8C8]"
-              style={{ background: "rgba(44,200,200,0.08)" }}
+              className="w-14 h-14 rounded-xl flex items-center justify-center text-[#2CC8C8] bg-[#F0FCFC]"
               aria-hidden="true"
             >
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -103,17 +95,17 @@ export default function ContatoPage() {
             </div>
             <div>
               <h2
-                className="text-2xl font-medium text-white mb-2 font-serif"
+                className="text-2xl font-medium text-[#111827] mb-2 font-serif"
                 style={{ fontFamily: "var(--font-cormorant)" }}
               >
                 Instagram
               </h2>
-              <p className="text-sm text-[#6B7E92] font-sans leading-relaxed mb-3">
-                Acompanhe resultados, procedimentos e dicas de saúde bucal no nosso perfil.
+              <p className="text-sm text-[#6B7280] font-sans leading-relaxed mb-3">
+                Acompanhe resultados reais, procedimentos e dicas de saúde bucal.
               </p>
-              <span className="text-xs text-[#2CC8C8] font-sans">@arakakiodonto</span>
+              <span className="text-xs text-[#2CC8C8] font-sans font-semibold">@arakakiodonto</span>
             </div>
-            <span className="inline-flex items-center gap-2 text-sm font-medium text-[#2CC8C8] group-hover:gap-3 transition-all font-sans">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#2CC8C8] group-hover:gap-3 transition-all font-sans">
               Ver perfil
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7" />
@@ -123,25 +115,44 @@ export default function ContatoPage() {
         </div>
 
         {/* Location info */}
-        <div className="max-w-4xl mx-auto mt-8">
-          <div
-            className="rounded-2xl border border-[#253045] p-8"
-            style={{ background: "linear-gradient(135deg, #131A28 0%, #1C2638 100%)" }}
-          >
+        <div className="max-w-4xl mx-auto mt-6">
+          <div className="rounded-2xl border border-[#E5E7EB] p-8 bg-[#F9FAFB]">
             <h2
-              className="text-2xl font-medium text-white mb-4 font-serif"
+              className="text-xl font-medium text-[#111827] mb-4 font-serif"
               style={{ fontFamily: "var(--font-cormorant)" }}
             >
               Localização
             </h2>
-            <p className="text-sm text-[#6B7E92] font-sans leading-relaxed mb-2">
+            <p className="text-sm text-[#374151] font-sans leading-relaxed mb-2 font-semibold">
               São Paulo, SP, Brasil
             </p>
-            <p className="text-xs text-[#4A5D70] font-sans">
+            <p className="text-xs text-[#9CA3AF] font-sans">
               Endereço completo disponível via WhatsApp ao agendar sua avaliação.
             </p>
           </div>
         </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 px-6 text-center bg-[#111827]">
+        <h2
+          className="text-3xl sm:text-4xl font-light text-white mb-4 font-serif"
+          style={{ fontFamily: "var(--font-cormorant)" }}
+        >
+          Primeira consulta
+          <span className="font-semibold text-[#2CC8C8]"> sem custo.</span>
+        </h2>
+        <p className="text-[#9CA3AF] font-sans mb-8 max-w-md mx-auto">
+          A Dra. Jéssica analisa o seu caso e explica o que é possível fazer, quanto tempo leva e o que esperar. Sem promessa vaga.
+        </p>
+        <a
+          href={WHATSAPP}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold font-sans text-[#111827] bg-[#2CC8C8] hover:bg-[#52DADA] transition-colors duration-200"
+        >
+          Agendar pelo WhatsApp
+        </a>
       </section>
 
       <Footer />
