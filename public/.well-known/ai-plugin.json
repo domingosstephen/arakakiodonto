@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Arakaki Odonto",
+  "name_for_model": "arakaki_odonto",
+  "description_for_human": "Arakaki Odonto — Clínica de Implantes Dentários e Harmonização Orofacial em São Paulo, Brasil.",
+  "description_for_model": "Plugin for Arakaki Odonto dental clinic in São Paulo, Brazil. Use this to get clinic information, list dental services (implants, HOF, whitening), get the dentist profile (Dra. Jéssica Arakaki, CRO 59293), and generate WhatsApp scheduling links for consultations. All content is in Brazilian Portuguese.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://arakakiodonto.com.br/api/mcp"
+  },
+  "logo_url": "https://arakakiodonto.com.br/logo.svg",
+  "contact_email": "contato@arakakiodonto.com.br",
+  "legal_info_url": "https://arakakiodonto.com.br/contato"
+}

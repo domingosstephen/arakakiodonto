@@ -1,0 +1,163 @@
+{
+  "$schema": "https://schema.org/",
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Arakaki Odonto",
+  "legalName": "Arakaki Odonto",
+  "url": "https://arakakiodonto.com.br",
+  "logo": "https://arakakiodonto.com.br/logo.svg",
+  "description": "Clínica odontológica especializada em Implantes Dentários e Harmonização Orofacial (HOF) em São Paulo, Brasil.",
+  "foundingDate": "2020",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BR",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "scheduling",
+    "availableLanguage": "Portuguese",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  },
+  "medicalSpecialty": ["Dentistry", "OralSurgery", "CosmeticDentistry"],
+  "employee": {
+    "@type": "Physician",
+    "name": "Jéssica Arakaki",
+    "honorificPrefix": "Dra.",
+    "jobTitle": "Cirurgiã-Dentista",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "CRO",
+      "value": "59293",
+      "propertyID": "CRO-SP"
+    },
+    "knowsAbout": ["Implantodontia", "Harmonização Orofacial", "Odontologia Estética"]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços Arakaki Odonto",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "position": 1,
+        "name": "Implante Unitário",
+        "category": "Implantes Dentários",
+        "description": "Substituição de um único dente perdido com implante de titânio e coroa de cerâmica personalizada.",
+        "url": "https://arakakiodonto.com.br/implantes",
+        "itemOffered": {
+          "@type": "MedicalProcedure",
+          "name": "Implante Dentário Unitário",
+          "procedureType": "Surgical",
+          "bodyLocation": "Maxila ou Mandíbula"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 2,
+        "name": "All-on-4",
+        "category": "Implantes Dentários",
+        "description": "Reabilitação oral completa de uma arcada inteira utilizando apenas quatro implantes de titânio.",
+        "url": "https://arakakiodonto.com.br/implantes",
+        "itemOffered": {
+          "@type": "MedicalProcedure",
+          "name": "Protocolo All-on-4",
+          "procedureType": "Surgical"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 3,
+        "name": "All-on-6",
+        "category": "Implantes Dentários",
+        "description": "Reabilitação oral completa com seis implantes por arcada, indicado para casos de maior reabsorção óssea.",
+        "url": "https://arakakiodonto.com.br/implantes",
+        "itemOffered": {
+          "@type": "MedicalProcedure",
+          "name": "Protocolo All-on-6",
+          "procedureType": "Surgical"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 4,
+        "name": "Toxina Botulínica",
+        "category": "Harmonização Orofacial",
+        "description": "Aplicação de toxina botulínica para suavizar linhas de expressão, tratar bruxismo e levantar comissuras labiais.",
+        "url": "https://arakakiodonto.com.br/hof",
+        "itemOffered": {
+          "@type": "MedicalProcedure",
+          "name": "Botox Orofacial",
+          "procedureType": "NoninvasiveProcedure"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 5,
+        "name": "Preenchimento com Ácido Hialurônico",
+        "category": "Harmonização Orofacial",
+        "description": "Preenchimento de lábios, sulcos nasolabiais e volumes faciais com ácido hialurônico biocompatível.",
+        "url": "https://arakakiodonto.com.br/hof",
+        "itemOffered": {
+          "@type": "MedicalProcedure",
+          "name": "Preenchimento Facial com AH",
+          "procedureType": "NoninvasiveProcedure"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 6,
+        "name": "Bioestimuladores de Colágeno",
+        "category": "Harmonização Orofacial",
+        "description": "Estimulação da produção natural de colágeno para firmeza e rejuvenescimento progressivo da pele.",
+        "url": "https://arakakiodonto.com.br/hof",
+        "itemOffered": {
+          "@type": "MedicalProcedure",
+          "name": "Bioestimulação Colágena",
+          "procedureType": "NoninvasiveProcedure"
+        }
+      },
+      {
+        "@type": "Offer",
+        "position": 7,
+        "name": "Clareamento Dental LED",
+        "category": "Clareamento Dental",
+        "description": "Clareamento dental profissional com ativação por luz LED. Resultado imediato em sessão única.",
+        "url": "https://arakakiodonto.com.br/contato",
+        "itemOffered": {
+          "@type": "MedicalProcedure",
+          "name": "Clareamento Dental Profissional",
+          "procedureType": "NoninvasiveProcedure"
+        }
+      }
+    ]
+  },
+  "aiFunctionality": {
+    "mcpServer": "https://arakakiodonto.com.br/api/mcp",
+    "mcpVersion": "2024-11-05",
+    "llmsTxt": "https://arakakiodonto.com.br/llms.txt",
+    "tools": [
+      {
+        "name": "getClinicInfo",
+        "description": "Get complete clinic information"
+      },
+      {
+        "name": "listServices",
+        "description": "List all dental services offered"
+      },
+      {
+        "name": "getDentistProfile",
+        "description": "Get dentist professional profile"
+      },
+      {
+        "name": "scheduleConsultation",
+        "description": "Get scheduling link for a consultation"
+      }
+    ]
+  }
+}

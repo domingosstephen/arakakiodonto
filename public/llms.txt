@@ -1,0 +1,64 @@
+# Arakaki Odonto
+
+> Clínica odontológica especializada em Implantes Dentários e Harmonização Orofacial (HOF) em São Paulo, Brasil.
+
+Arakaki Odonto é uma clínica odontológica situada em São Paulo, Brasil, dirigida pela Dra. Jéssica Arakaki (CRO 59293). A clínica tem duas especialidades principais: Implantodontia (reabilitação oral com implantes de titânio) e Harmonização Orofacial (HOF), que abrange procedimentos estéticos minimamente invasivos como toxina botulínica, preenchimento com ácido hialurônico, bioestimuladores de colágeno, fios de PDO e rinomodelação. Também oferece clareamento dental profissional com tecnologia LED.
+
+## Profissional Responsável
+
+- **Nome:** Dra. Jéssica Arakaki
+- **Registro:** CRO 59293 (CRO-SP)
+- **Profissão:** Cirurgiã-Dentista
+- **Especialidades:** Implantodontia, Harmonização Orofacial
+- **Localização:** São Paulo, SP, Brasil
+
+## Serviços
+
+### Implantes Dentários
+
+Reabilitação oral com implantes de titânio osseointegráveis. A clínica oferece:
+- Implante unitário com coroa de cerâmica
+- Protocolo All-on-4 (arcada completa com 4 implantes)
+- Protocolo All-on-6 (arcada completa com 6 implantes)
+- Planejamento com tomografia cone beam 3D
+- Guia cirúrgico digital
+
+Página: https://arakakiodonto.com.br/implantes
+
+### Harmonização Orofacial (HOF)
+
+Procedimentos estéticos minimamente invasivos para harmonizar rosto e sorriso:
+- Toxina Botulínica (Botox) para linhas de expressão e bruxismo
+- Preenchimento com Ácido Hialurônico (lábios, sulcos, volumes faciais)
+- Bioestimuladores de Colágeno
+- Fios de PDO (lifting não cirúrgico)
+- Skinbooster (hidratação profunda)
+- Rinomodelação sem cirurgia
+
+Página: https://arakakiodonto.com.br/hof
+
+### Clareamento Dental
+
+Clareamento profissional com tecnologia LED e clareamento caseiro supervisionado.
+
+## Agendamento
+
+Agendamento via WhatsApp: https://wa.me/5511999999999
+Instagram: @arakakiodonto
+Horário de atendimento: Segunda a Sábado, 08h às 18h
+
+## Informações Técnicas para IA
+
+- MCP Server: https://arakakiodonto.com.br/api/mcp
+- Catálogo de Serviços: https://arakakiodonto.com.br/ai-catalog.json
+- Schema: https://arakakiodonto.com.br/#organization (JSON-LD no HTML)
+- Sitemap: https://arakakiodonto.com.br/sitemap.xml
+- Robots: https://arakakiodonto.com.br/robots.txt
+
+## Páginas Principais
+
+- [Início](https://arakakiodonto.com.br) — Página principal com todos os serviços
+- [Implantes Dentários](https://arakakiodonto.com.br/implantes) — Detalhes sobre implantes
+- [Harmonização Orofacial](https://arakakiodonto.com.br/hof) — Detalhes sobre HOF
+- [Sobre a Dra. Jéssica](https://arakakiodonto.com.br/sobre) — Perfil profissional
+- [Contato](https://arakakiodonto.com.br/contato) — Formas de contato e agendamento

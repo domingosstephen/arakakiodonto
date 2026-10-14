@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# AI crawlers — explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
+Sitemap: https://arakakiodonto.com.br/sitemap.xml
+
+# AI resources
+# LLMs.txt: https://arakakiodonto.com.br/llms.txt
+# AI Catalog: https://arakakiodonto.com.br/ai-catalog.json
+# MCP Server: https://arakakiodonto.com.br/api/mcp

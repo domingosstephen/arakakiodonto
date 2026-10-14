@@ -1,0 +1,20 @@
+{
+  "mcpVersion": "2024-11-05",
+  "servers": [
+    {
+      "name": "arakakiodonto",
+      "description": "Arakaki Odonto dental clinic MCP server. Provides tools to query clinic info, services, dentist profile, and generate scheduling links.",
+      "endpoint": "https://arakakiodonto.com.br/api/mcp",
+      "transport": "http",
+      "auth": {
+        "type": "none"
+      },
+      "tools": [
+        "getClinicInfo",
+        "listServices",
+        "getDentistProfile",
+        "scheduleConsultation"
+      ]
+    }
+  ]
+}
